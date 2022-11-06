@@ -1,0 +1,20 @@
+package patterns.structural.composit;
+
+public class Triangle implements Shape{
+
+    @Override
+    public void draw(String fillColor) {
+        System.out.println("Drawing triangle with " + fillColor + " color.");
+    }
+}
+
+
+/*
+public class Triangle implements Shape{
+    @Override
+    public void draw(String fillColor) {
+        System.out.println("Drawing Triangle with color : " + fillColor);
+
+    }
+}
+*/

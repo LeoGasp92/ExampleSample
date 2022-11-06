@@ -1,0 +1,34 @@
+package advanced.fileStream;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+
+public class FileOutputStreamExample
+{
+    public static void main(String[] args) throws IOException
+    {
+        String test = "OutPut hakuna matata";
+        FileOutputStream out = new FileOutputStream("Data/OutPut.txt");
+        for(char ch : test.toCharArray())
+        {
+            out.write(ch);
+        }
+    }
+}
+
+
+
+/*
+public class FileOutputStreamExample {
+    public static void main(String[] args) throws IOException {
+        String  test = "Output test";
+
+        FileOutputStream out = new FileOutputStream("Data/Output.txt");
+
+        for(char ch : test.toCharArray()){
+            out.write(ch);}
+
+    }
+}
+*/
